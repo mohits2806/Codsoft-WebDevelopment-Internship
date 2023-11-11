@@ -7,7 +7,11 @@
 }
 
 body{
-    background-color: rgb(154, 103, 202);
+    background-color: rgb(54, 52, 52);
+}
+
+::selection{
+    user-select: none;
 }
 
 .container{
@@ -20,6 +24,7 @@ body{
 .container h1{
     font-size: 5rem;
     font-family: 'Noto Sans JP', sans-serif;
+    color: white;
 }
 
 .container .item{
@@ -35,6 +40,9 @@ body{
     width: 90%;
     height: auto;
     font-size: 30px;
+    background-color: black;
+    color: white;
+    padding-right: 10px;
 }
 
 .container .item button{
@@ -45,31 +53,15 @@ body{
     font-size: 50px;
     margin: 2px;
     padding: 2px;
-    background-color: brown;
-    color: aqua;
+    background-color: gray;
+    color: white;
     border-radius: 100%;
     cursor: pointer;
     border: 2px solid black;
+    transition: all 0.1s ease-in-out;
 }
 
-@media only screen and (max-width: 1180px){
-    .container h1{
-        font-size: 10rem;
-    }
-    
-    .container .item input{
-        width: 80%;
-        height: auto;
-        font-size: 100px;
-    }
-    
-    .container .item button{
-        text-align: center;
-        width: 200px;
-        height: 200px;
-        font-size: 100px;
-        margin: 2px;
-        padding: 2px;
-    }
-    
+.container .item button:active{
+    background-color: rgb(204, 201, 201);
+    /* transform: background-color: rgb(170, 168, 168); */
 }
